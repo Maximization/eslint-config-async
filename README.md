@@ -2,6 +2,10 @@
 
 A shareable ESLint config for writing better asynchronous code.
 
+Find an overview of what rules are enabled and why in this article:
+
+📚 [**14 Linting Rules To Help You Write Asynchronous Code in JavaScript**](https://maximorlov.com/linting-rules-for-asynchronous-code-in-javascript/)
+
 ## Installation & usage
 Install this package and its peer dependencies:
 
