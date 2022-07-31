@@ -2,11 +2,30 @@
 
 A shareable ESLint config for writing better asynchronous code.
 
-Find an overview of what rules are enabled and why in this article:
+Find an overview of what rules are enabled, and why, in this article:
 
 📚 [**14 Linting Rules To Help You Write Asynchronous Code in JavaScript**](https://maximorlov.com/linting-rules-for-asynchronous-code-in-javascript/)
 
 ## Installation & usage
+
+### Base rules
+Install this package and ESLint:
+
+```shell
+npm install --save-dev eslint eslint-config-async
+```
+
+In your `.eslintrc` configuration file:
+
+```js
+module.exports = {
+  extends: [
+    'async'
+  ],
+};
+```
+
+### Base rules + Node.js specific rules (recommended for non-TypeScript users)
 Install this package and its peer dependencies:
 
 ```shell
@@ -21,7 +40,8 @@ module.exports = {
     'eslint-plugin-node',
   ],
   extends: [
-    'eslint-config-async'
+    'async',
+    'async/node'
   ],
 };
 ```

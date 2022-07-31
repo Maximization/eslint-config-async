@@ -8,10 +8,5 @@ module.exports = {
     "max-nested-callbacks": ["error", 3],
     "no-return-await": "error",
     "prefer-promise-reject-errors": "error",
-
-    // Node.js rules
-    "node/handle-callback-err": ["error", "^(e|err|error)$"],
-    "node/no-callback-literal": "error",
-    "node/no-sync": "error",
   },
 };
