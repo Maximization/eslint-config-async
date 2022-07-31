@@ -37,11 +37,39 @@ In your `.eslintrc` configuration file:
 ```js
 module.exports = {
   plugins: [
-    'eslint-plugin-node',
+    'eslint-plugin-node'
   ],
   extends: [
     'async',
     'async/node'
   ],
+};
+```
+
+### Base rules + Node.js specific rules + TypeScript rules (recommended for TypeScript users)
+Install this package and its peer dependencies:
+
+```shell
+npm install --save-dev eslint eslint-config-async eslint-plugin-node typescript @typescript-eslint/parser @typescript-eslint/eslint-plugin
+```
+
+In your `.eslintrc` configuration file:
+
+```js
+module.exports = {
+  plugins: [
+    'eslint-plugin-node',
+    '@typescript-eslint'
+  ],
+  extends: [
+    'async',
+    'async/node',
+    'async/typescript'
+  ],
+  parser: '@typescript-eslint/parser',
+  parserOptions: {
+    tsconfigRootDir: __dirname,
+    project: ['./tsconfig.json'],
+  }
 };
 ```
