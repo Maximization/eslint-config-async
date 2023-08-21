@@ -13,7 +13,7 @@
   "homepage": "https://github.com/Maximization/eslint-config-async#readme",
   "bugs": "https://github.com/Maximization/eslint-config-async/issues",
   "scripts": {
-    "release": "np"
+    "release": "np --no-tests"
   },
   "files": [
     "index.js",
