@@ -13,7 +13,6 @@
   "homepage": "https://github.com/Maximization/eslint-config-async#readme",
   "bugs": "https://github.com/Maximization/eslint-config-async/issues",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "release": "np"
   },
   "files": [
