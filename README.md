@@ -78,6 +78,40 @@ module.exports = {
   }
 };
 ```
+### Base rules + TypeScript rules (eslint flat config)
+
+```shell
+npm install --save-dev eslint @eslint/js eslint-config-async typescript typescript-eslint
+```
+
+In your `.eslint.config.mjs` configuration file:
+
+```ts
+// @ts-check
+
+import eslint from '@eslint/js';
+import tseslint from 'typescript-eslint';
+import eslintConfigAsync from 'eslint-config-async';
+import eslintConfigAsyncTypescript from 'eslint-config-async/typescript.js';
+
+export default tseslint.config({
+  files: ['src/**/*.ts'],
+  extends: [
+    eslint.configs.recommended,
+    ...tseslint.configs.recommendedTypeChecked,
+    ...tseslint.configs.strictTypeChecked,
+    eslintConfigAsync,
+    eslintConfigAsyncTypescript,
+  ],
+  languageOptions: {
+    parser: tseslint.parser,
+    parserOptions: {
+      projectService: true,
+      tsconfigRootDir: import.meta.dirname,
+    },
+  },
+});
+```
 
 ## Migrating from v1 to v2
 
