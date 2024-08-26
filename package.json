@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-async",
-  "version": "2.0.3",
+  "version": "3.0.0",
   "description": "A shareable ESLint config for writing better asynchronous code",
   "main": "index.js",
   "engines": {
