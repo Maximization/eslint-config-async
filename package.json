@@ -4,7 +4,7 @@
   "description": "A shareable ESLint config for writing better asynchronous code",
   "main": "index.js",
   "engines": {
-    "node": ">=18.x"
+    "node": "^18.18.0 || ^20.9.0 || >=21.1.0"
   },
   "repository": {
     "type": "git",
@@ -16,9 +16,7 @@
     "release": "np --no-tests"
   },
   "files": [
-    "index.js",
-    "node.js",
-    "typescript.js"
+    "index.js"
   ],
   "keywords": [
     "eslint",
@@ -26,15 +24,21 @@
   ],
   "author": "Maxim Orlov <hello@maximorlov.com> (https://maximorlov.com)",
   "license": "MIT",
+  "dependencies": {
+    "eslint-plugin-n": "17.10.2"
+  },
   "devDependencies": {
     "np": "8.0.4",
     "prettier": "2.6.0"
   },
   "peerDependencies": {
-    "@typescript-eslint/eslint-plugin": "^5.0.0 || ^6.0.0 || ^8.0.0",
-    "@typescript-eslint/parser": "^5.0.0 || ^6.0.0 || ^8.0.0",
-    "eslint": ">=8.11.0",
-    "eslint-plugin-node": ">=11.1.0",
-    "typescript": "*"
+    "eslint": "^9.0.0",
+    "typescript": "*",
+    "typescript-eslint": "^8.0.0"
+  },
+  "peerDependenciesMeta": {
+    "typescript": {
+      "optional": true
+    }
   }
 }
