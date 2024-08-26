@@ -20,7 +20,7 @@ Install this package and ESLint:
 npm install --save-dev eslint eslint-config-async
 ```
 
-In your `.eslintrc` configuration file:
+In your `.eslintrc.js` configuration file:
 
 ```js
 module.exports = {
@@ -37,7 +37,7 @@ Install this package and its peer dependencies:
 npm install --save-dev eslint eslint-config-async eslint-plugin-node
 ```
 
-In your `.eslintrc` configuration file:
+In your `.eslintrc.js` configuration file:
 
 ```js
 module.exports = {
@@ -58,7 +58,7 @@ Install this package and its peer dependencies:
 npm install --save-dev eslint eslint-config-async eslint-plugin-node typescript @typescript-eslint/parser @typescript-eslint/eslint-plugin
 ```
 
-In your `.eslintrc` configuration file:
+In your `.eslintrc.js` configuration file:
 
 ```js
 module.exports = {
