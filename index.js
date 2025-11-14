@@ -10,7 +10,8 @@ module.exports = {
         "no-promise-executor-return": "error",
         "require-atomic-updates": "error",
         "max-nested-callbacks": ["error", 3],
-        "no-return-await": "error",
+        // Deprecated: https://eslint.org/docs/latest/rules/no-return-await
+        // "no-return-await": "error",
         "prefer-promise-reject-errors": "error",
       },
     },
