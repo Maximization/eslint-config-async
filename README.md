@@ -13,13 +13,14 @@ Find an overview of what rules are enabled, and why, in this article:
 - [Installation \& usage](#installation--usage)
   - [Non-TypeScript users](#non-typescript-users)
   - [TypeScript users](#typescript-users)
+- [Migrating from v3 to v4](#migrating-from-v3-to-v4)
 - [Migrating from v2 to v3](#migrating-from-v2-to-v3)
 - [Migrating from v1 to v2](#migrating-from-v1-to-v2)
 
 ## Requirements
 
-- ESLint v9
-- Node.js ^18.18.0, ^20.9.0, or >=21.1.0 (set by ESLint v9)
+- ESLint v9 or v10
+- Node.js ^20.19.0, ^22.13.0, or >=24 (set by ESLint v10)
 
 If you're using ESLint v8, you should use v2 of this library. [Installation & usage for eslint-config-async v2](https://github.com/Maximization/eslint-config-async/blob/v2.0.3/README.md).
 
@@ -80,6 +81,25 @@ module.exports = [
   },
 ];
 ```
+
+## Migrating from v3 to v4
+
+Version 4 adds support for ESLint v10 while keeping support for ESLint v9. There are no changes to the config itself — rule names, exported configs, and the way you import them are all unchanged.
+
+The only breaking change is a higher Node.js requirement, inherited from ESLint v10 and `eslint-plugin-n` v18:
+
+```diff
+- Node.js ^18.18.0, ^20.9.0, or >=21.1.0
++ Node.js ^20.19.0, ^22.13.0, or >=24
+```
+
+If you're already on a supported Node.js version, upgrading is a drop-in replacement:
+
+```shell
+npm install --save-dev eslint-config-async@4
+```
+
+Upgrading ESLint to v10 is optional. When you do, note that ESLint v10 removes the legacy `.eslintrc.*` config system entirely — if you're still on v3 of this library you're already using `eslint.config.js`, so there's nothing to change. See the [ESLint v10 migration guide](https://eslint.org/docs/latest/use/migrate-to-10.0.0) for the full list of changes.
 
 ## Migrating from v2 to v3
 
