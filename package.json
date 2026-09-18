@@ -29,7 +29,7 @@
   },
   "devDependencies": {
     "np": "8.0.4",
-    "prettier": "2.6.0"
+    "prettier": "3.9.8"
   },
   "peerDependencies": {
     "eslint": "^9.0.0",

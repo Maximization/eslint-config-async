@@ -26,6 +26,7 @@ If you're using ESLint v8, you should use v2 of this library. [Installation & us
 ## Installation & usage
 
 ### Non-TypeScript users
+
 Install this package and ESLint:
 
 ```shell
@@ -44,6 +45,7 @@ module.exports = [
 ```
 
 ### TypeScript users
+
 Install this package and its peer dependencies:
 
 ```shell
