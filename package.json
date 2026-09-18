@@ -28,7 +28,7 @@
     "eslint-plugin-n": "17.10.2"
   },
   "devDependencies": {
-    "np": "8.0.4",
+    "np": "12.1.1",
     "prettier": "3.9.8"
   },
   "peerDependencies": {
